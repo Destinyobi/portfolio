@@ -18,6 +18,8 @@ def index(request):
             phone = phone_number,
             message = message
         )
+
+        messages.success(request, 'Your message has been sent successfully!')
         return redirect(index)
     
 
