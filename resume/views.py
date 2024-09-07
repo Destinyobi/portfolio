@@ -20,7 +20,7 @@ def index(request):
         )
 
         messages.success(request, 'Your message has been sent successfully!')
-        return redirect(index)
+        # return redirect(index)
     
 
     return render(request, 'home1.html')
